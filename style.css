@@ -1,4 +1,4 @@
-/* Write some CSS below */
+/* Style */
 body {
   font-family: Overpass;
   margin: 0;
@@ -8,6 +8,19 @@ body {
 h1, h2, h3 {
   color: #404042;
   font-family: Chivo;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
 }
 
 p {
@@ -16,7 +29,7 @@ p {
 }
 
 .container {
-  width: 800px;
+  width: 300px;
   margin: auto;
 }
 
@@ -30,13 +43,11 @@ p {
 
 .banner h1 {
   color: white;
-  font-size: 45px;
   margin: 0;
 }
 
 .banner p {
   color: white;
-  font-size: 24px;
 }
 
 .btn-blue {
@@ -97,8 +108,8 @@ p {
   .container {
     width: 400px;
   }
+  
 }
-
 
 @media (min-width: 800px) {
   .container {
@@ -113,7 +124,17 @@ p {
 }
 
 /* Propriedades dos Cards */
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
   .cards {
     grid-template-columns: 1fr;
   }
@@ -122,4 +143,3 @@ p {
     width: auto;
   }
 }
-  
