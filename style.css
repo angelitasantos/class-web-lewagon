@@ -2,6 +2,7 @@
 body {
   font-family: Overpass;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -90,7 +91,8 @@ p {
   color: white;
 }
 
-/* Propriedades do Container */
+
+/* Responsividade Propriedades do Container */
 @media (min-width: 500px) {
   .container {
     width: 400px;
